@@ -1,0 +1,12 @@
+---
+---
+
+{% for post in site.posts %}
+<article>
+    <header>
+        <h2><a href="{{ post.url }}" rel="bookmark">{{ post.title | strip_html }}</a></h2>
+        <time datetime="{{ post.date | date: '%Y-%m-%e' }}">写于{{ post.date | date: '%Y年%m月%e日' }}</time>
+    </header>
+    {{ post.excerpt }}
+</article>
+{% endfor %}

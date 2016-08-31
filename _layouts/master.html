@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>1px{% if page.title %} » {{ page.title | strip_html }}{% endif %}</title>
+    </head>
+    <body>
+        <main>
+            {% include header.html %}
+            {{ content }}
+            {% include footer.html %}
+        </main>
+    </body>
+</html>

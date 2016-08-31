@@ -1,0 +1,23 @@
+---
+layout: master
+---
+
+<article>
+    <header>
+        <h2>{{ page.title }}</h2>
+        <time datetime="{{ page.date | date: '%Y-%m-%e' }}">写于{{ page.date | date: '%Y年%m月%e日' }}</time>
+    </header>
+    {{ content }}
+    {% if page.previous or page.next %}
+    <nav>
+        <ul>
+            {% if page.previous %}
+            <li><a href="{{ page.previous.url }}" rel="prev">{{ page.previous.title | strip_html }}</a></li>
+            {% endif %}
+            {% if page.next %}
+            <li><a href="{{ page.next.url }}" rel="next">{{ page.next.title | strip_html }}</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</article>
