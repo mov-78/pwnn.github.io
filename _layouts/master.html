@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>1px{% if page.title %} » {{ page.title | strip_html }}{% endif %}</title>
+        <link href="/css/1px.css?release={{ site.time | date: '%Y%m%d' }}" rel="stylesheet">
     </head>
     <body>
         <main>
