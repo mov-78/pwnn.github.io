@@ -7,6 +7,5 @@
         <h2><a href="{{ post.url }}" rel="bookmark">{{ post.title | strip_html }}</a></h2>
         <time datetime="{{ post.date | date: '%Y-%m-%d' }}">写于{{ post.date | date: '%Y年%m月%d日' }}</time>
     </header>
-    {{ post.excerpt }}
 </article>
 {% endfor %}
