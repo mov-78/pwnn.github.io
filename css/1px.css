@@ -1,0 +1,117 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%; /* 1rem=10px */
+}
+
+body {
+    background-color: #FAFAFA;
+    font: 1.4rem/1.5 "PingFangSC-Light", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    margin: 0;
+}
+
+article, footer, header, main, nav, section { display: block; }
+
+a {
+    -webkit-text-decoration-skip: objects;
+    background-color: transparent;
+    color: #0091EA;
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+    text-decoration: underline;
+}
+
+small { font-size: 80%; }
+
+b, strong { font-weight: bolder; }
+
+h1, h2, h3, h4, h5, h6 { margin: 2rem 0; }
+
+img { border-style: none; }
+
+code, pre {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+ol, ul { list-style-position: inside; }
+ul { list-style-type: square; }
+
+main {
+    margin: 0 auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+main > header a {
+    background: no-repeat center url(/img/1px.svg);
+    display: block;
+    height: 128px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 88px;
+}
+
+article {
+    background-color: #FFF;
+    border: 1px solid #F5F5F5;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+article:first-of-type { margin-top: 0; }
+@media (max-width: 640px) {
+    article {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+article header h1 { margin: 0; }
+article header time {
+    color: #9E9E9E;
+    font-size: 1.2rem;
+}
+
+article h1 { font-size: 1.8rem; }
+article h2 { font-size: 1.6rem; }
+article h3, article h4, article h5, article h6 { font-size: 1.4rem; }
+
+article p { margin: 1rem 0; }
+
+article ul,
+article ol {
+    margin: 1rem 0;
+    padding: 0 0 0 2rem;
+}
+
+article img {
+    border: 1px solid #EEE;
+    box-sizing: border-box;
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    padding: 2px;
+}
+
+article blockquote {
+    background-color: #FFFDE7;
+    color: #616161;
+    font-size: 1.2rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+article blockquote p { margin: 0 0 1rem 0; }
+article blockquote p:last-child { margin-bottom: 0; }
+
+article >:last-child { margin-bottom: 0; }
