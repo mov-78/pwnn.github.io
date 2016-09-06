@@ -146,3 +146,9 @@ article table td {
 article table th { font-weight: normal;}
 
 article >:last-child { margin-bottom: 0; }
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+footer a { color: inherit; }
