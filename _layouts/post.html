@@ -12,10 +12,16 @@ layout: master
     <nav>
         <ul>
             {% if page.previous %}
-            <li><a href="{{ page.previous.url }}" rel="prev">{{ page.previous.title | strip_html }}</a></li>
+            <li>
+                <b>上一篇：</b>
+                <a href="{{ page.previous.url }}">{{ page.previous.title | strip_html }}</a>
+            </li>
             {% endif %}
             {% if page.next %}
-            <li><a href="{{ page.next.url }}" rel="next">{{ page.next.title | strip_html }}</a></li>
+            <li>
+                <b>下一篇：</b>
+                <a href="{{ page.next.url }}">{{ page.next.title | strip_html }}</a>
+            </li>
             {% endif %}
         </ul>
     </nav>

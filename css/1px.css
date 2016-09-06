@@ -114,4 +114,15 @@ article blockquote {
 article blockquote p { margin: 0 0 1rem 0; }
 article blockquote p:last-child { margin-bottom: 0; }
 
+article nav {
+    border-top: 1px solid #F5F5F5;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+article nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 article >:last-child { margin-bottom: 0; }
