@@ -4,9 +4,10 @@
 {% for post in site.posts %}
 <article>
     <header>
-        <h1><a href="{{ post.url }}" rel="bookmark">{{ post.title | strip_html }}</a></h1>
+        <h1>{{ post.title | strip_html }}</h1>
         <time datetime="{{ post.date | date: '%Y-%m-%d' }}">写于{{ post.date | date: '%Y年%m月%d日' }}</time>
     </header>
     {{ post.excerpt }}
+    <nav><a href="{{ post.url }}" rel="bookmark">阅读全文 »</a></nav>
 </article>
 {% endfor %}
